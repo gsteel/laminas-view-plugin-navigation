@@ -61,10 +61,8 @@
     </UndefinedInterfaceMethod>
   </file>
   <file src="src/Navigation/AbstractHelper.php">
-    <DocblockTypeContradiction occurrences="3">
-      <code>! is_int($this-&gt;minDepth)</code>
+    <DocblockTypeContradiction occurrences="1">
       <code>! is_string($message)</code>
-      <code>null === $this-&gt;container</code>
     </DocblockTypeContradiction>
     <ImplementedReturnTypeMismatch occurrences="2">
       <code>AbstractHelper</code>
@@ -73,27 +71,6 @@
     <InvalidThrow occurrences="1">
       <code>Navigation\Exception\ExceptionInterface</code>
     </InvalidThrow>
-    <MissingConstructor occurrences="19">
-      <code>$container</code>
-      <code>$container</code>
-      <code>$container</code>
-      <code>$container</code>
-      <code>$container</code>
-      <code>$events</code>
-      <code>$events</code>
-      <code>$events</code>
-      <code>$events</code>
-      <code>$events</code>
-      <code>$maxDepth</code>
-      <code>$maxDepth</code>
-      <code>$maxDepth</code>
-      <code>$maxDepth</code>
-      <code>$maxDepth</code>
-      <code>$minDepth</code>
-      <code>$minDepth</code>
-      <code>$minDepth</code>
-      <code>$minDepth</code>
-    </MissingConstructor>
     <MixedArgument occurrences="2">
       <code>$page-&gt;getTextDomain()</code>
       <code>$page-&gt;getTextDomain()</code>
@@ -129,10 +106,6 @@
     <PossiblyNullArgument occurrences="1">
       <code>$page-&gt;getTitle()</code>
     </PossiblyNullArgument>
-    <PossiblyNullPropertyAssignmentValue occurrences="2">
-      <code>$maxDepth</code>
-      <code>$minDepth</code>
-    </PossiblyNullPropertyAssignmentValue>
     <PossiblyNullReference occurrences="4">
       <code>attach</code>
       <code>getParent</code>
@@ -144,12 +117,9 @@
       <code>(bool) $useAcl</code>
       <code>(string) $indent</code>
     </RedundantCastGivenDocblockType>
-    <RedundantConditionGivenDocblockType occurrences="5">
-      <code>$this-&gt;acl === null &amp;&amp; static::$defaultAcl !== null</code>
+    <RedundantConditionGivenDocblockType occurrences="2">
       <code>is_int($maxDepth)</code>
       <code>is_int($minDepth)</code>
-      <code>null !== $this-&gt;container</code>
-      <code>static::$defaultAcl !== null</code>
     </RedundantConditionGivenDocblockType>
     <UndefinedInterfaceMethod occurrences="1">
       <code>plugin</code>

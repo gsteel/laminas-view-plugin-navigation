@@ -50,27 +50,27 @@ abstract class AbstractHelper extends View\Helper\AbstractHtmlElement implements
 {
     use TranslatorAwareTrait;
 
-    /** @var EventManagerInterface */
+    /** @var EventManagerInterface|null */
     protected $events;
 
     /**
      * AbstractContainer to operate on by default
      *
-     * @var AbstractContainer
+     * @var AbstractContainer|null
      */
     protected $container;
 
     /**
      * The minimum depth a page must have to be included when rendering
      *
-     * @var int
+     * @var int|null
      */
     protected $minDepth;
 
     /**
      * The maximum depth a page can have to be included when rendering
      *
-     * @var int
+     * @var int|null
      */
     protected $maxDepth;
 
@@ -116,7 +116,7 @@ abstract class AbstractHelper extends View\Helper\AbstractHtmlElement implements
      * Default ACL to use when iterating pages if not explicitly set in the
      * instance by calling {@link setAcl()}
      *
-     * @var AclInterface
+     * @var AclInterface|null
      */
     protected static $defaultAcl;
 
@@ -462,7 +462,7 @@ abstract class AbstractHelper extends View\Helper\AbstractHtmlElement implements
      *
      * Implements {@link HelperInterface::setAcl()}.
      *
-     * @param  AclInterface $acl ACL object.
+     * @param  AclInterface|null $acl ACL object.
      * @return AbstractHelper
      */
     public function setAcl(?AclInterface $acl = null)

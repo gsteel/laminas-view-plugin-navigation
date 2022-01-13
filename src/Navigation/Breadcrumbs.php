@@ -31,7 +31,7 @@ class Breadcrumbs extends AbstractHelper
     /**
      * The minimum depth a page must have to be included when rendering.
      *
-     * @var int
+     * @var int|null
      */
     protected $minDepth = 1;
 
