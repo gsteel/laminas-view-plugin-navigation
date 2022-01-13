@@ -1,0 +1,16 @@
+docs_dir: docs/book
+site_dir: docs/html
+nav:
+    - Home: index.md
+    - "Quick Start": quick-start.md
+    - Helpers:
+        - Introduction: helpers/intro.md
+        - Breadcrumbs: helpers/breadcrumbs.md
+        - Links: helpers/links.md
+        - Menu: helpers/menu.md
+        - Sitemap: helpers/sitemap.md
+site_name: laminas-view-plugin-navigation
+site_description: 'View helpers and integration for the navigation component'
+repo_url: 'https://github.com/laminas/laminas-view-plugin-navigation'
+extra:
+    project: Components

@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.18.1@dda05fa913f4dc6eb3386f2f7ce5a45d37a71bcb">
+  <file src="src/Navigation.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>null === $this-&gt;plugins</code>
+    </DocblockTypeContradiction>
+    <FalsableReturnStatement occurrences="1">
+      <code>false</code>
+    </FalsableReturnStatement>
+    <InvalidFunctionCall occurrences="1">
+      <code>call_user_func_array($helper, $arguments)</code>
+    </InvalidFunctionCall>
+    <InvalidThrow occurrences="1">
+      <code>ExceptionInterface</code>
+    </InvalidThrow>
+    <LessSpecificImplementedReturnType occurrences="1">
+      <code>self</code>
+    </LessSpecificImplementedReturnType>
+    <MissingConstructor occurrences="1">
+      <code>$plugins</code>
+    </MissingConstructor>
+    <MixedArgument occurrences="2">
+      <code>$helper</code>
+      <code>$helper</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="1">
+      <code>$helper</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>NavigationHelper</code>
+    </MixedInferredReturnType>
+    <MixedMethodCall occurrences="2">
+      <code>setContainer</code>
+      <code>setContainer</code>
+    </MixedMethodCall>
+    <MixedReturnStatement occurrences="1">
+      <code>$helper</code>
+    </MixedReturnStatement>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$container</code>
+    </MoreSpecificImplementedParamType>
+    <RedundantCastGivenDocblockType occurrences="4">
+      <code>(bool) $injectAcl</code>
+      <code>(bool) $injectContainer</code>
+      <code>(bool) $injectTranslator</code>
+      <code>(string) $proxy</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantCondition occurrences="2">
+      <code>$view</code>
+      <code>$view</code>
+    </RedundantCondition>
+    <RedundantConditionGivenDocblockType occurrences="4">
+      <code>$helper</code>
+      <code>$helper</code>
+      <code>$this-&gt;plugins</code>
+      <code>$view &amp;&amp; $this-&gt;plugins</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>hasTranslator</code>
+      <code>setTranslator</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Navigation/AbstractHelper.php">
+    <DocblockTypeContradiction occurrences="3">
+      <code>! is_int($this-&gt;minDepth)</code>
+      <code>! is_string($message)</code>
+      <code>null === $this-&gt;container</code>
+    </DocblockTypeContradiction>
+    <ImplementedReturnTypeMismatch occurrences="2">
+      <code>AbstractHelper</code>
+      <code>null|EventManagerInterface</code>
+    </ImplementedReturnTypeMismatch>
+    <InvalidThrow occurrences="1">
+      <code>Navigation\Exception\ExceptionInterface</code>
+    </InvalidThrow>
+    <MissingConstructor occurrences="19">
+      <code>$container</code>
+      <code>$container</code>
+      <code>$container</code>
+      <code>$container</code>
+      <code>$container</code>
+      <code>$events</code>
+      <code>$events</code>
+      <code>$events</code>
+      <code>$events</code>
+      <code>$events</code>
+      <code>$maxDepth</code>
+      <code>$maxDepth</code>
+      <code>$maxDepth</code>
+      <code>$maxDepth</code>
+      <code>$maxDepth</code>
+      <code>$minDepth</code>
+      <code>$minDepth</code>
+      <code>$minDepth</code>
+      <code>$minDepth</code>
+    </MissingConstructor>
+    <MixedArgument occurrences="2">
+      <code>$page-&gt;getTextDomain()</code>
+      <code>$page-&gt;getTextDomain()</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="5">
+      <code>$container</code>
+      <code>$container</code>
+      <code>$container</code>
+      <code>$label</code>
+      <code>$value</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="1">
+      <code>bool</code>
+    </MixedInferredReturnType>
+    <MixedOperand occurrences="1">
+      <code>$label</code>
+    </MixedOperand>
+    <MixedReturnStatement occurrences="1">
+      <code>$results-&gt;last()</code>
+    </MixedReturnStatement>
+    <ParamNameMismatch occurrences="1">
+      <code>$events</code>
+    </ParamNameMismatch>
+    <PossiblyFalseArgument occurrences="1">
+      <code>strrpos($prefix, '\\')</code>
+    </PossiblyFalseArgument>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$container</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$container</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+    <PossiblyNullArgument occurrences="1">
+      <code>$page-&gt;getTitle()</code>
+    </PossiblyNullArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="2">
+      <code>$maxDepth</code>
+      <code>$minDepth</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyNullReference occurrences="4">
+      <code>attach</code>
+      <code>getParent</code>
+      <code>plugin</code>
+      <code>translate</code>
+    </PossiblyNullReference>
+    <RedundantCastGivenDocblockType occurrences="3">
+      <code>(bool) $renderInvisible</code>
+      <code>(bool) $useAcl</code>
+      <code>(string) $indent</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantConditionGivenDocblockType occurrences="5">
+      <code>$this-&gt;acl === null &amp;&amp; static::$defaultAcl !== null</code>
+      <code>is_int($maxDepth)</code>
+      <code>is_int($minDepth)</code>
+      <code>null !== $this-&gt;container</code>
+      <code>static::$defaultAcl !== null</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>plugin</code>
+    </UndefinedInterfaceMethod>
+    <UndefinedMethod occurrences="1">
+      <code>setSharedManager</code>
+    </UndefinedMethod>
+    <UnevaluatedCode occurrences="1">
+      <code>return '';</code>
+    </UnevaluatedCode>
+  </file>
+  <file src="src/Navigation/Breadcrumbs.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>null === $partial</code>
+    </DocblockTypeContradiction>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;renderPartialModel($params, $container, $partial)</code>
+      <code>$this-&gt;renderPartialModel([], $container, $partial)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>string</code>
+    </InvalidReturnType>
+    <MissingConstructor occurrences="1">
+      <code>$partial</code>
+    </MissingConstructor>
+    <MixedArgument occurrences="6">
+      <code>$active</code>
+      <code>$active-&gt;getLabel()</code>
+      <code>$active-&gt;getTextDomain()</code>
+      <code>$html</code>
+      <code>$model['pages']</code>
+      <code>$partial[0]</code>
+    </MixedArgument>
+    <MixedArrayAssignment occurrences="2">
+      <code>$model['pages'][]</code>
+      <code>$model['pages'][]</code>
+    </MixedArrayAssignment>
+    <MixedAssignment occurrences="7">
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$html</code>
+      <code>$model['pages'][]</code>
+      <code>$parent</code>
+      <code>$parent</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="4">
+      <code>getLabel</code>
+      <code>getParent</code>
+      <code>getParent</code>
+      <code>getTextDomain</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="1">
+      <code>$html</code>
+    </MixedOperand>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$container</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$container</code>
+      <code>$container</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$partial</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyNullReference occurrences="2">
+      <code>plugin</code>
+      <code>plugin</code>
+    </PossiblyNullReference>
+    <RedundantCastGivenDocblockType occurrences="1">
+      <code>(bool) $linkLast</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantConditionGivenDocblockType occurrences="2">
+      <code>is_array($partial)</code>
+      <code>is_string($separator)</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedInterfaceMethod occurrences="2">
+      <code>plugin</code>
+      <code>plugin</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Navigation/ConfigProvider.php">
+    <InvalidReturnStatement occurrences="1"/>
+    <InvalidReturnType occurrences="1">
+      <code>ViewHelperConfigurationType</code>
+    </InvalidReturnType>
+    <UndefinedDocblockClass occurrences="1">
+      <code>ViewHelperConfigurationType from \Laminas\View\ConfigProvider</code>
+    </UndefinedDocblockClass>
+  </file>
+  <file src="src/Navigation/Links.php">
+    <InvalidOperand occurrences="1">
+      <code>$relFlag</code>
+    </InvalidOperand>
+    <MissingConstructor occurrences="1">
+      <code>$root</code>
+    </MissingConstructor>
+    <MixedArgument occurrences="8">
+      <code>$active</code>
+      <code>$arguments[0]</code>
+      <code>$intermediate</code>
+      <code>$intermediate</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page-&gt;$meth()</code>
+      <code>$type</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>$relation</code>
+    </MixedArgumentTypeCoercion>
+    <MixedArrayOffset occurrences="1">
+      <code>$result[$rel][$type]</code>
+    </MixedArrayOffset>
+    <MixedAssignment occurrences="9">
+      <code>$active</code>
+      <code>$found</code>
+      <code>$intermediate</code>
+      <code>$intermediate</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$result</code>
+      <code>$type</code>
+      <code>$value</code>
+    </MixedAssignment>
+    <MixedInferredReturnType occurrences="2">
+      <code>AbstractPage|array|null</code>
+      <code>array|null</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="2">
+      <code>$found</code>
+      <code>count($result) === 1 ? $result[0] : $result</code>
+    </MixedReturnStatement>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$container</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidPropertyAssignmentValue occurrences="1">
+      <code>$container</code>
+    </PossiblyInvalidPropertyAssignmentValue>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>null</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <RedundantCastGivenDocblockType occurrences="1">
+      <code>(int) $renderFlag</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantConditionGivenDocblockType occurrences="2">
+      <code>$this-&gt;root</code>
+      <code>$this-&gt;root</code>
+    </RedundantConditionGivenDocblockType>
+  </file>
+  <file src="src/Navigation/Listener/AclListener.php">
+    <MixedAssignment occurrences="5">
+      <code>$acl</code>
+      <code>$page</code>
+      <code>$privilege</code>
+      <code>$resource</code>
+      <code>$role</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="4">
+      <code>getPrivilege</code>
+      <code>getResource</code>
+      <code>hasResource</code>
+      <code>isAllowed</code>
+    </MixedMethodCall>
+    <PossiblyInvalidArrayAccess occurrences="3">
+      <code>$params['acl']</code>
+      <code>$params['page']</code>
+      <code>$params['role']</code>
+    </PossiblyInvalidArrayAccess>
+  </file>
+  <file src="src/Navigation/Menu.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>null === $partial</code>
+    </DocblockTypeContradiction>
+    <InvalidReturnStatement occurrences="2">
+      <code>$this-&gt;renderPartialModel($params, $container, $partial)</code>
+      <code>$this-&gt;renderPartialModel([], $container, $partial)</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="2">
+      <code>string</code>
+      <code>string</code>
+    </InvalidReturnType>
+    <MissingConstructor occurrences="1">
+      <code>$partial</code>
+    </MissingConstructor>
+    <MixedArgument occurrences="22">
+      <code>$options['addClassToListItem']</code>
+      <code>$options['addClassToListItem']</code>
+      <code>$options['escapeLabels']</code>
+      <code>$options['escapeLabels']</code>
+      <code>$options['indent']</code>
+      <code>$options['indent']</code>
+      <code>$options['indent']</code>
+      <code>$options['liActiveClass']</code>
+      <code>$options['liActiveClass']</code>
+      <code>$options['maxDepth']</code>
+      <code>$options['maxDepth']</code>
+      <code>$options['minDepth']</code>
+      <code>$options['minDepth']</code>
+      <code>$options['onlyActiveBranch']</code>
+      <code>$options['ulClass']</code>
+      <code>$options['ulClass']</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page-&gt;getTextDomain()</code>
+      <code>$page-&gt;getTextDomain()</code>
+      <code>$partial[0]</code>
+      <code>$subPage</code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>$liClasses</code>
+    </MixedArgumentTypeCoercion>
+    <MixedAssignment occurrences="8">
+      <code>$active['page']</code>
+      <code>$active['page']</code>
+      <code>$foundDepth</code>
+      <code>$foundPage</code>
+      <code>$isActive</code>
+      <code>$liClasses[]</code>
+      <code>$page</code>
+      <code>$subPage</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="11">
+      <code>getClass</code>
+      <code>getClass</code>
+      <code>getParent</code>
+      <code>getParent</code>
+      <code>getParent</code>
+      <code>hasPage</code>
+      <code>hasPage</code>
+      <code>hasPages</code>
+      <code>hasPages</code>
+      <code>hasPages</code>
+      <code>isActive</code>
+    </MixedMethodCall>
+    <MixedOperand occurrences="7">
+      <code>$active['depth']</code>
+      <code>$escaper($label)</code>
+      <code>$escaper($ulClass)</code>
+      <code>$escaper($ulClass)</code>
+      <code>$escaper(implode(' ', $liClasses))</code>
+      <code>$escaper(implode(' ', $liClasses))</code>
+      <code>$foundDepth</code>
+    </MixedOperand>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$container</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyInvalidArgument occurrences="2">
+      <code>$container</code>
+      <code>$container</code>
+    </PossiblyInvalidArgument>
+    <PossiblyNullArgument occurrences="1">
+      <code>$page-&gt;getTitle()</code>
+    </PossiblyNullArgument>
+    <PossiblyNullOperand occurrences="2">
+      <code>$minDepth</code>
+      <code>$minDepth</code>
+    </PossiblyNullOperand>
+    <PossiblyNullPropertyAssignmentValue occurrences="1">
+      <code>$partial</code>
+    </PossiblyNullPropertyAssignmentValue>
+    <PossiblyNullReference occurrences="4">
+      <code>plugin</code>
+      <code>plugin</code>
+      <code>plugin</code>
+      <code>plugin</code>
+    </PossiblyNullReference>
+    <RedundantCastGivenDocblockType occurrences="4">
+      <code>(bool) $flag</code>
+      <code>(bool) $flag</code>
+      <code>(bool) $flag</code>
+      <code>(bool) $flag</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantConditionGivenDocblockType occurrences="3">
+      <code>is_array($partial)</code>
+      <code>is_string($liActiveClass)</code>
+      <code>is_string($ulClass)</code>
+    </RedundantConditionGivenDocblockType>
+    <UndefinedInterfaceMethod occurrences="4">
+      <code>plugin</code>
+      <code>plugin</code>
+      <code>plugin</code>
+      <code>plugin</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="src/Navigation/Sitemap.php">
+    <MissingConstructor occurrences="1">
+      <code>$serverUrl</code>
+    </MissingConstructor>
+    <MixedArgument occurrences="7">
+      <code>$changefreq</code>
+      <code>$changefreq</code>
+      <code>$curDoc</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$priority</code>
+      <code>$priority</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="8">
+      <code>$basePathHelper</code>
+      <code>$changefreq</code>
+      <code>$curDoc</code>
+      <code>$escaper</code>
+      <code>$page</code>
+      <code>$priority</code>
+      <code>$serverUrlHelper</code>
+      <code>$this-&gt;serverUrl</code>
+    </MixedAssignment>
+    <MixedFunctionCall occurrences="3">
+      <code>$basePathHelper()</code>
+      <code>$escaper($string)</code>
+      <code>$serverUrlHelper()</code>
+    </MixedFunctionCall>
+    <MixedInferredReturnType occurrences="2">
+      <code>string</code>
+      <code>string</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="2">
+      <code>$escaper($string)</code>
+      <code>$this-&gt;serverUrl</code>
+    </MixedReturnStatement>
+    <MoreSpecificImplementedParamType occurrences="1">
+      <code>$container</code>
+    </MoreSpecificImplementedParamType>
+    <PossiblyFalseArgument occurrences="1">
+      <code>$lastmod</code>
+    </PossiblyFalseArgument>
+    <PossiblyNullReference occurrences="7">
+      <code>isValid</code>
+      <code>isValid</code>
+      <code>isValid</code>
+      <code>isValid</code>
+      <code>plugin</code>
+      <code>plugin</code>
+      <code>plugin</code>
+    </PossiblyNullReference>
+    <RedundantCastGivenDocblockType occurrences="6">
+      <code>(bool) $formatOutput</code>
+      <code>(bool) $schemaValidation</code>
+      <code>(bool) $useSitemapValidators</code>
+      <code>(bool) $useXmlDecl</code>
+      <code>(string) $href</code>
+      <code>(string) $href</code>
+    </RedundantCastGivenDocblockType>
+    <RedundantPropertyInitializationCheck occurrences="1">
+      <code>isset($this-&gt;serverUrl)</code>
+    </RedundantPropertyInitializationCheck>
+    <UndefinedInterfaceMethod occurrences="3">
+      <code>plugin</code>
+      <code>plugin</code>
+      <code>plugin</code>
+    </UndefinedInterfaceMethod>
+  </file>
+  <file src="test/Navigation/AbstractHelperTest.php">
+    <MixedArgument occurrences="3">
+      <code>$acl</code>
+      <code>$acl</code>
+      <code>$this-&gt;serviceManager-&gt;get('Navigation')</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="4">
+      <code>$acl</code>
+      <code>$acl</code>
+      <code>$role</code>
+      <code>$role</code>
+    </MixedAssignment>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$_helper</code>
+    </NonInvariantDocblockPropertyType>
+    <RedundantConditionGivenDocblockType occurrences="2">
+      <code>$this-&gt;_helper</code>
+      <code>$this-&gt;_helper</code>
+    </RedundantConditionGivenDocblockType>
+  </file>
+  <file src="test/Navigation/AbstractTest.php">
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>(new RouterConfigProvider())-&gt;getDependencyConfig()</code>
+    </MixedArgumentTypeCoercion>
+    <MixedAssignment occurrences="1">
+      <code>$app</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="4">
+      <code>bootstrap</code>
+      <code>getMvcEvent</code>
+      <code>loadModules</code>
+      <code>setRouteMatch</code>
+    </MixedMethodCall>
+    <NullArgument occurrences="3">
+      <code>null</code>
+      <code>null</code>
+      <code>null</code>
+    </NullArgument>
+    <TooManyArguments occurrences="1">
+      <code>new GenericResource('admin_foo', 'member_foo')</code>
+    </TooManyArguments>
+  </file>
+  <file src="test/Navigation/BreadcrumbsTest.php">
+    <InvalidArgument occurrences="2">
+      <code>'Navigation'</code>
+      <code>'Navigation'</code>
+    </InvalidArgument>
+    <MixedArgument occurrences="1">
+      <code>$acl['acl']</code>
+    </MixedArgument>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$_helper</code>
+    </NonInvariantDocblockPropertyType>
+  </file>
+  <file src="test/Navigation/LinksTest.php">
+    <MixedArgument occurrences="13">
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="63">
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$actual</code>
+      <code>$actual</code>
+      <code>$actual</code>
+      <code>$actual</code>
+      <code>$actual</code>
+      <code>$actual</code>
+      <code>$actual</code>
+      <code>$actual[$attrib][$type][$key]</code>
+      <code>$actual[]</code>
+      <code>$actual[]</code>
+      <code>$actual[]</code>
+      <code>$actual[]</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$found</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page</code>
+      <code>$page</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="36">
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRel</code>
+      <code>addRev</code>
+      <code>addRev</code>
+      <code>getHref</code>
+      <code>getHref</code>
+      <code>getHref</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>removeRel</code>
+      <code>removeRev</code>
+      <code>setActive</code>
+      <code>setActive</code>
+    </MixedMethodCall>
+    <MixedPropertyAssignment occurrences="5">
+      <code>$active</code>
+      <code>$active</code>
+      <code>$active</code>
+      <code>$page</code>
+      <code>$page</code>
+    </MixedPropertyAssignment>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$_helper</code>
+    </NonInvariantDocblockPropertyType>
+    <PossiblyInvalidArgument occurrences="1">
+      <code>$found</code>
+    </PossiblyInvalidArgument>
+    <PossiblyInvalidMethodCall occurrences="3">
+      <code>getHref</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullReference occurrences="4">
+      <code>getHref</code>
+      <code>getLabel</code>
+      <code>getLabel</code>
+      <code>plugin</code>
+    </PossiblyNullReference>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>plugin</code>
+    </UndefinedInterfaceMethod>
+    <UnusedForeachValue occurrences="2">
+      <code>$discard</code>
+      <code>$discard</code>
+    </UnusedForeachValue>
+  </file>
+  <file src="test/Navigation/MenuTest.php">
+    <InvalidArgument occurrences="2">
+      <code>'Navigation'</code>
+      <code>'Navigation'</code>
+    </InvalidArgument>
+    <MixedArgument occurrences="5">
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="2">
+      <code>$p</code>
+      <code>$page</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="3">
+      <code>getRole</code>
+      <code>setActive</code>
+      <code>setActive</code>
+    </MixedMethodCall>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$_helper</code>
+    </NonInvariantDocblockPropertyType>
+  </file>
+  <file src="test/Navigation/NavigationTest.php">
+    <InvalidArgument occurrences="1"/>
+    <MixedArgument occurrences="3">
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="3">
+      <code>$actual</code>
+      <code>$creationContextValue</code>
+      <code>$expected</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="3">
+      <code>getContainer</code>
+      <code>getContainer</code>
+      <code>getContainer</code>
+    </MixedMethodCall>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$_helper</code>
+    </NonInvariantDocblockPropertyType>
+    <PossiblyNullArgument occurrences="1">
+      <code>$this-&gt;errorHandlerMessage</code>
+    </PossiblyNullArgument>
+    <TooManyArguments occurrences="1"/>
+    <UnusedClosureParam occurrences="1">
+      <code>$code</code>
+    </UnusedClosureParam>
+  </file>
+  <file src="test/Navigation/SitemapTest.php">
+    <MixedArgument occurrences="2">
+      <code>$acl['acl']</code>
+      <code>$acl['acl']</code>
+    </MixedArgument>
+    <MixedMethodCall occurrences="1">
+      <code>setBasePath</code>
+    </MixedMethodCall>
+    <MixedPropertyTypeCoercion occurrences="3">
+      <code>$this-&gt;oldServer</code>
+      <code>$this-&gt;oldServer</code>
+      <code>$this-&gt;oldServer</code>
+    </MixedPropertyTypeCoercion>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$_helper</code>
+    </NonInvariantDocblockPropertyType>
+    <PossiblyNullReference occurrences="1">
+      <code>plugin</code>
+    </PossiblyNullReference>
+    <UndefinedInterfaceMethod occurrences="1">
+      <code>plugin</code>
+    </UndefinedInterfaceMethod>
+  </file>
+</files>
